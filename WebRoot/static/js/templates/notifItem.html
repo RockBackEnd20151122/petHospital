@@ -1,0 +1,13 @@
+<li id="friend<%= id %>">
+    <dl class="friendInNotifDl">
+        <dd class="dd1"><img src="<%= avatar_url %>" /></dd>
+        <dd class="dd2">
+            <p><%=username+'&nbsp; &nbsp; '+ delivery_time %></p>
+            <p><%=content %></p>
+            <p><%=title %></p>
+        </dd>
+        <dd class="dd3">
+            <input type="button" class="appsIcon <%=(request?'':'none') %>" />
+        </dd>
+    </dl>
+</li>

@@ -1,0 +1,159 @@
+<!DOCTYPE >
+<html>
+<head>
+<title>宠物医院</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+<link href="../css/_.css" rel="stylesheet" />
+<link href="../css/layout.css" rel="stylesheet" />
+<style>
+</style>
+</head>
+
+<body>
+	<!-- <header> <h2>Logo goes here</h2> </header> -->
+	<div class="transparentBg"></div>
+	<div class="main">
+		<form class="loginForm" action="/petHospital/servlet/LoginServlet" method="get">
+			<ul class="loginUl font14">
+				<li class="align_center height_40 font14 font_b">登录宠物医院</li>
+				<li>
+					<span class="l">用户名</span>
+					<input type="text" name="userName" class="j_userName iptR" />
+				</li>
+				<li>
+					<span class="l">密码</span>
+					<input type="text" name="password" class="j_password iptR" />
+				</li>
+				<li>
+					<input type="submit" value="登录" class="btnLogin font14" />
+					<input type="reset" value="重置" class="btnReset font14" />
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	<!-- 查询 : 兽医查询 -->
+	<div class="main">
+		<form class="loginForm" action="" method="post">
+			<ul class="loginUl">
+				<li class="align_center height_40 font14 font_b">
+					查询：
+					<a>宠物</a>
+					<a>兽医</a>
+				</li>
+				<li>
+					<span class="l">兽医名称</span>
+					<input type="text" name="userName" class="iptR" />
+				</li>
+				<li>
+					<span class="l">专业</span>
+					<input type="text" name="password" class="iptR" />
+				</li>
+				<li>
+					<input type="submit" value="查询" class="btnLogin font14" />
+					<input type="reset" value="重置" class="btnReset font14" />
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	<!-- 查询 : 宠物查询 -->
+	<div class="main">
+		<form class="loginForm" action="" method="post">
+			<ul class="loginUl">
+				<li class="align_center height_40 font14 font_b">
+					查询：
+					<a>宠物</a>
+					<a>兽医</a>
+				</li>
+				<li>
+					<span class="l">宠物名称</span>
+					<input type="text" name="userName" class="iptR" />
+				</li>
+				<li>
+					<span class="l">所有人名称</span>
+					<input type="text" name="password" class="iptR" />
+				</li>
+				<li>
+					<input type="submit" value="查询" class="btnLogin font14" />
+					<input type="reset" value="重置" class="btnReset font14" />
+				</li>
+				<li>
+					<input type="submit" value="新增宠物" class="btnLogin font14" />
+					<input type="reset" value="新增所有人" class="btnReset font14" />
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	<!-- 修改主人信息 -->
+	<div class="main">
+		<form class="loginForm" action="" method="post">
+			<ul class="loginUl">
+				<li class="align_center height_40 font14 font_b"> 修改主人信息</li>
+				<li>
+					<span class="l">主人名称</span>
+					<input type="text" name="userName" class="iptR" />
+				</li>
+				<li>
+					<span class="l">主人地址</span>
+					<input type="text" name="password" class="iptR" />
+				</li>
+				<li>
+					<span class="l">城市</span>
+					<input type="text" name="password" class="iptR" />
+				</li>
+				<li>
+					<span class="l">电话号码</span>
+					<input type="text" name="password" class="iptR" />
+				</li>
+				<li>
+					<input type="submit" value="修改" class="btnLogin font14" />
+					<input type="reset" value="放弃" class="btnReset font14" />
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	<!-- 修改宠物信息 -->
+	<div class="main">
+		<form class="loginForm" action="" method="post">
+			<ul class="loginUl">
+				<li class="align_center height_40 font14 font_b"> 修改主人信息</li>
+				<li>
+					<span class="l">宠物名称</span>
+					<input type="text" name="userName" class="iptR" />
+				</li>
+				<li>
+					<span class="l">出生日期</span>
+					<input type="text" name="password" class="iptR" />
+				</li>
+				<li>
+					<span class="l">类型</span>
+					<input type="text" name="password" class="iptR" />
+				</li>
+				<li>
+					<span class="l">所有人姓名</span>
+					<input type="text" name="password" class="iptR" />
+				</li>
+				<li>
+					<input type="submit" value="阅览病例" class="btnLogin font14" />
+					<input type="reset" value="新增病例" class="btnReset font14" />
+				</li>
+				<li>
+					<input type="submit" value="修改信息" class="btnLogin font14" />
+				</li>
+			</ul>
+		</form>
+	</div>
+	<footer>
+		@copyright goes here.
+	</footer>
+</body>
+</html>

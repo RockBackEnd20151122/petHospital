@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.biz.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Y</servlet-name>
+    <servlet-class>com.biz.Y</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PetSearchService</servlet-name>
+    <servlet-class>com.biz.PetSearchService</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PetAndDoctorSearchService</servlet-name>
+    <servlet-class>com.biz.PetAndDoctorSearchService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PetAndDoctorSearchService</servlet-name>
+    <url-pattern>/servlet/PetAndDoctorSearchService</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Y</servlet-name>
+    <url-pattern>/servlet/Y</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PetSearchService</servlet-name>
+    <url-pattern>/servlet/PetSearchService</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>./static/pages/petsHospital/Login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

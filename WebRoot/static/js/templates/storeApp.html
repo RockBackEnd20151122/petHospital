@@ -1,0 +1,218 @@
+<div class="popBtm">
+    <div class="storeRate">
+        <form id="storeRateForm">
+            <input type="checkbox" class="appsIcon" id="storeRatingcheckbox1" />
+            <input type="checkbox" class="appsIcon" id="storeRatingcheckbox2" />
+            <input type="checkbox" class="appsIcon" id="storeRatingcheckbox3" />
+            <input type="checkbox" class="appsIcon" id="storeRatingcheckbox4" />
+            <input type="checkbox" class="appsIcon" id="storeRatingcheckbox5" />
+            <p>According to the star rating</p>
+            <textarea rows="3" cols="30">
+                comments
+            </textarea>
+        </form>
+        <table id="storeRateTable">
+        </table>
+    </div>
+    <div class="popBtmL">
+        <div id="focus"> </div>
+        <div id="description">
+            <h4 class="h4 fwb">Description</h4>
+            <p>
+                <%=description %>
+<!--                 There is a common need to pass configuration info to a module. That configuration info is usually known as part of the application, and there needs to be a way to pass that down to a module. In RequireJS, that is done with the config option for requirejs.config(). Modules can then read that info by asking for the special dependency "module" and calling。<a href="#" class="more">more</a> -->
+            </p>
+        </div>
+        <div id="byUser">
+            <h4 class="fwb h4">Also by this user</h4>
+            <div id="transverse" class="wrap clearfix">
+                <a href="javascript:;" class="photos-thumb-pre" id="thumb1-pre" style=""> </a>
+                <div class="photos-thumb-wrap" id="thumb1-wrap">
+<!--                     <ul class="photos-thumb" id="thumb1-thumbs">
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/_app1.png"/></a>
+                            <p>
+                                whether
+                            </p>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/_app2.png"/></a>
+                            <p>
+                                turnUp
+                            </p>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/_app3.png"/></a>
+                            <p>
+                                talkMe
+                            </p>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/_app4.png"/></a>
+                            <p>
+                                appBuild
+                            </p>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/_app5.png"/></a>
+                            <p>
+                                vivaGo
+                            </p>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/_app6.png"/></a>
+                            <p>
+                                Clock
+                            </p>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/calculator.png"/></a>
+                            <p>
+                                Calculator
+                            </p>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/photo.png"/></a>
+                            <p>
+                                Photo
+                            </p>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/market.png"/></a>
+                            <p>
+                                Market
+                            </p>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/plug/hScrollPic/map.png"/></a>
+                            <p>
+                                Map
+                            </p>
+                        </li>
+                    </ul>--><!--TODO：add user‘s thumbnail --> 
+                </div>
+                <a href="javascript:;" class="photos-thumb-next" id="thumb1-next"> </a>
+            </div>
+        </div>
+    </div><!--popBtmL--->
+    <div class="popBtmR">
+        <span class="storeAppOff appsIcon"> </span>
+        <ul class="detailsUl fwb">
+            <li> 
+                created:<a href="#" class=""><%=created %></a>-last&nbsp;upgrade:<a href="#" class=""><%=lastUpdate %></a><a class="f50bbff"><span href=""><%=num %></span></a>&nbsp;friends using this app
+            </li>
+            <li>
+                language:<span id="language"><%=lang?lang:'English' %></span>
+            </li>
+            <li style="margin-top:-2px;" class="f50bbff">
+                Author:<a href="#" class="f50bbff"><%=author %></a><span id="ratingSpan"><p class="rating<%= rating?'':0 %> appsIcon" style="width:<%= rating?rating:90 %>px"> </p></span><span id="autoUpdate" class="appsIcon f1498df">auto Update</span><span id="updateNotification" class="appsIcon f1498df">update Notification</span>
+            </li>
+            <li style="line-height:18px;height:20px;">
+                downloaded<span id="downTimes" style="padding:0 8px;"><%=downloaded %></span>times
+            </li>
+        </ul><!--detailsUl-->
+        <div class="storeBtns">
+            <a class="appsIcon fwb" id="storeBtnRate">Rate appication</a>
+            <a class="appsIcon fwb" id="storeBtnSend">Send message to author</a>
+            <a class="appsIcon fwb" id="storeBtnFlag">Flag as inappropriate</a>
+            <a class="appsIcon fwb" id="storeBtnDownload">download</a>
+        </div>
+        <h4 style="padding:4px 0 5px 8px;" class="fwb">What's New</h4>
+        <div class="whatNew fwb">
+            <a ><%=notice  %></a><!----TODO:----->
+<!--             <a href="">-Notification on google push</a>
+            <a href="">-Android Bug fix</a>
+            <a href="">-New connexion system</a> -->
+        </div>
+        <div id="scroll">
+            <!--for scroll plugin-->
+<!--             <div class="scrollbar">
+                <div class="track">
+                    <div class="thumb">
+                        <div class="end"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="viewport">
+                <div class="overview">
+                    <ol class="newsListOl">
+                        <li>
+                            <ul class="newsList">
+                                <li>
+                                    <a href="#"> <img class="thuPhoto" src="" rel="headPhoto" /> </a>
+                                </li>
+                                <li class="midd" style="">
+                                    <h4>Arno Bas</h4>
+                                    <a href="#" class="f50bbff">16/17/2012</a>
+                                    <a href="#" id="starsOf01" class="starsOfSb appsIcon"> </a>
+                                </li>
+                                <li class="righ" style="">
+                                    There is a common need to pass configuration info to a module. That configuration info is usually known as part of the application, and there needs to be a way to pass that down to a module.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="newsList">
+                                <li>
+                                    <a href="#"> <img class="thuPhoto" src="" rel="headPhoto" /> </a>
+                                </li>
+                                <li style="width:100px;">
+                                    <h4>Arno Bas</h4>
+                                    <a href="#" class="f50bbff">16/17/2012</a>
+                                    <a href="#" id="starsOf02" class="starsOfSb appsIcon"> </a>
+                                </li>
+                                <li style="width:350px;line-height:14px;">
+                                    There is a common need to pass configuration info to a module. That configuration info is usually known as part of the application, and there needs to be a way to pass that down to a module.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="newsList">
+                                <li>
+                                    <a href="#"> <img class="thuPhoto" src="" rel="headPhoto" /> </a>
+                                </li>
+                                <li style="width:100px;">
+                                    <h4>Arno Bas</h4>
+                                    <a href="#" class="f50bbff">16/17/2012</a>
+                                    <a href="#" id="starsOf03" class="starsOfSb appsIcon"> </a>
+                                </li>
+                                <li style="width:350px;line-height:14px;">
+                                    There is a common need to pass configuration info to a module. That configuration info is usually known as part of the application, and there needs to be a way to pass that down to a module.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="newsList">
+                                <li>
+                                    <a href="#"> <img class="thuPhoto" src="" rel="headPhoto" /> </a>
+                                </li>
+                                <li style="width:100px;">
+                                    <h4>Arno Bas</h4>
+                                    <a href="#" class="f50bbff">16/17/2012</a>
+                                    <a href="#" id="starsOf04" class="starsOfSb appsIcon"> </a>
+                                </li>
+                                <li style="width:350px;line-height:14px;">
+                                    There is a common need to pass configuration info to a module. That configuration info is usually known as part of the application, and there needs to be a way to pass that down to a module.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="newsList">
+                                <li>
+                                    <a href="#"> <img class="thuPhoto" src="" rel="headPhoto" /> </a>
+                                </li>
+                                <li style="width:100px;">
+                                    <h4>Arno Bas</h4>
+                                    <a href="#" class="f50bbff">16/17/2012</a>
+                                    <a href="#" id="starsOf05" class="starsOfSb appsIcon"> </a>
+                                </li>
+                                <li style="width:350px;line-height:14px;">
+                                    There is a common need to pass configuration info to a module. That configuration info is usually known as part of the application, and there needs to be a way to pass that down to a module.
+                                </li>
+                            </ul>
+                        </li>
+                </div>
+            </div> -->
+        </div><!--scroll end-->
+    </div><!--popBtmR--->
+</div><!--popBtm--->

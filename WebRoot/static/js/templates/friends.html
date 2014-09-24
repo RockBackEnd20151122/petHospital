@@ -1,0 +1,41 @@
+<!-- template of "friends" application-->
+<div class="popHead popbg">
+    <img src="/ACenter/res/images/app/basic/friends.png"   class="thumbnail"  />
+    <span id="label">Friends</span>
+    <span class="popbg close"> </span>
+    <span class="popbg maximize"> </span>
+    <span class="popbg minimize"> </span>
+    <span class="popbg drag"> </span>
+</div>
+
+<div class="popCont" style="width:800px;height:480px;">
+    <ul id="toolbarFriends" class="repeatX">
+        <li><input type="button" id="backward" class="appsIcon" /></li>
+        <li id="byGroupLi" style="position:relative;">
+            <select id="byGroupSelect" name="byGroupSelect">
+                <option value="10">friends</option>
+                <option value="11">family</option>
+                <option value="12">co-workers</option>
+                <option value="13">schoolmates</option>
+            </select>
+        </li>
+        <li style="padding-left:80px;">
+            <input type="text" id="searchText" class="bgStoreToolbar" placeholder="search" />
+        </li>
+        <li style="padding-left:10px;">
+            <input type="button" id="ok" class="bgStoreToolbar" />
+        </li>
+    </ul>
+    <div id="friendLIst">
+        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"> </div></div></div></div>
+        <div class="viewport">
+            <div class="overview">
+            <ul class="friendsUl">
+                
+            </ul>
+            </div>
+        </div><!--- viewport --->
+    </div> <!--- scrollbar1--->
+   </div>
+   
+<!--TODO: Thumbnails of app-->

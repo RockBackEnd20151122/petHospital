@@ -1,0 +1,18 @@
+<ul class="longClickUl repeatX" id="longClickUl">
+    <li class="arrowTop appsIcon"> </li>
+    <li class="liL appsIcon" > </li>
+    
+    <li class="duplicate appsIcon <%=(bOwn&&bDuplicate)?'':'none'%>"><input type="button" id="iptDuplicate" class="appsIcon" /></li>
+    <li class="sendHomescreen appsIcon"><input type="button" id="iptSendHomescreen" class="appsIcon" /></li>
+    <li class="changePic appsIcon <%=bOwn?'':'none'%>"><input type="file" id="imgIpt" /><img src="<%=src %>" class="appsIcon" id="imgChangePic" /><input type="button" id="iptChangePicL" class="appsIcon" /><input type="button" id="iptChangePicR" class="appsIcon" /></li>
+    <li class="privacy appsIcon <%=bOwn?'':'none'%>"><input type="button" id="iptPrivacyL" class="appsIcon <%=privacy==1?'un':''%>" /><input type="button" id="iptPrivacyR" class="appsIcon <%=privacy==1?'':'un'%>" /></li>
+    <li class="renameApp appsIcon <%=bOwn?'':'none'%>"><input type="text" id="iptRenameAppL" value="<%=label?label:'' %>" /><input type="button" id="iptRenameAppR" class="appsIcon" /></li>
+    
+    <li class="liR appsIcon" > </li>
+</ul>
+
+<!--@description: some login blow:                              --->
+<!--@description: bOwn means this is my own app                     --->
+<!--@description: bDuplicate means this is the common app, except "profile" --->
+<!--@description: TODO: so what about the store, the friends, the connect                   -->
+<!--@description: also if is my own app, confirmed inside the module before load template           --->

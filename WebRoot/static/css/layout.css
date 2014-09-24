@@ -1,0 +1,53 @@
+@charset "UTF-8";
+html, body{ padding: 0; margin: 0; height: 100% }
+body{ font-size:14px }
+.bg1{ background:transparent url(../img/01.png) no-repeat center center }
+.bg2{ background:transparent url(../img/02.png) no-repeat center center }
+.bg3{ background:transparent url(../img/03.png) no-repeat center center }
+.bg4{ background:transparent url(../img/04.png) no-repeat center center }
+.bg5{ background:transparent url(../img/05.png) no-repeat center center }
+.bg6{ background:transparent url(../img/06.png) no-repeat center center }
+.bg7{ background:transparent url(../img/07.png) no-repeat center center }
+.main{ width:500px; height:300px; margin:100px auto }
+.transparentBg{
+	width:500px; height:300px; border:1px #666 solid; border-radius:5px; margin-left:-250px;
+	background:#fff; opacity:.6; box-shadow:3px 3px 4px #ddd;
+	position:absolute; left:50%; top:100px; z-index:-100;
+}
+.searchA{ }
+.loginUl{ }
+li{ height:50px }
+.l{
+	width:36%; height:30px; line-height:30px;
+	text-align:right;
+}
+.iptR{
+	width:50%; height:30px; margin-right:10%;
+	background: #ddd;
+}
+input.btnLogin, input.btnReset{ width:100px; height:30px; border:none; margin-left:100px }
+
+/*layout*/
+.l{ float:left; display:inline-block }
+.r{ float:right; display:inline-block }
+.iptL{ float:left; display:inline-block }
+.iptR{ float:right; display:inline-block }
+
+/* font */
+.height_40{
+	height:40px; line-height:40px;	
+}
+.align_center{
+	text-align:center;
+}
+.font14{
+	font-size:14px;
+}
+.font18{
+	font-size:18px;
+}
+.font_b, a.font_b{
+	font-weight:bold;
+}
+a.underline{
+}

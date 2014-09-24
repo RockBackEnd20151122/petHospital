@@ -1,0 +1,3 @@
+INSERT OWNER VALUES('Rock', 'Pudong District', 'ShangHai', '13816470956', '001', '168111' )
+
+SELECT * FROM OWNER

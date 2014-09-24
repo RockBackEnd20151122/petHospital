@@ -1,0 +1,25 @@
+<li id="friend<%= id %>">
+    <dl class="friendDl">
+        <dd><img src="<%= avatar_url %>" /></dd>
+        <dd class="dd2">
+            <p><%=username %></p>
+            <input type="button" class="appsIcon" />
+        </dd>
+        <dd class="dd3">
+            <div id="wrap<%= id %>" class="" style="position: relative;">
+                <input type="button" class="appsIcon" id="sele<%= id %>" />
+            </div>
+        </dd>
+        <dd class="dd4">
+            <input type="button" class="dd4b1 appsIcon <%= status1?'hov':''%>" />
+            <input type="button" class="dd4b2 appsIcon <%= status2?'hov':''%>" />
+            <input type="button" class="dd4b3 appsIcon <%= status3?'hov':''%>" />
+            <input type="button" class="dd4b4 appsIcon <%= status4?'hov':''%>" />
+            <input type="button" class="dd4b5 appsIcon <%= status5?'hov':''%>" />
+        </dd>
+        <dd class="dd5">
+            <input type="button" class="appsIcon" />
+        </dd>
+    </dl>
+    <!--end of friendDl-->
+</li>
